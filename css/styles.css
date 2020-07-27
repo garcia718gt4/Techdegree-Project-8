@@ -14,11 +14,11 @@ body{
 */
 
 .grid-container { 
-    display: grid;
     max-width: 415px;
+    display: grid;
     grid-template-columns: 1fr;
     row-gap: 30px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 header {
@@ -31,6 +31,7 @@ h1 {
 }
 
 .card {
+    max-width: 415px;
     background-color: #fff;
     border: 2px solid rgb(195, 195, 195);
     border-radius: 10px;
@@ -106,11 +107,12 @@ h1 {
 /* ========================================
         MEDIA QUERY 870PX
    ======================================== */
-   @media (min-width: 870px) {
+   @media (min-width: 780px) {
     .grid-container {
-        max-width: 1327px;
+        max-width: 1326px;
         grid-template-columns: repeat(auto-fit, 415px);
         column-gap: 40px;
-        margin: 0 auto; 
+    
     }
 };
+
